@@ -1,4 +1,5 @@
 function roundTo(num,fraction=2){
+    num +='';
     var dot=num.indexOf('.');
     var trunc=Math.trunc(num);
 
