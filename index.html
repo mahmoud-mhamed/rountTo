@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>routndTo</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="roundTo.js"></script>
+</head>
+<body >
+<input type="text" placeholder="Enter Number To Round It" >
+<button>Round</button>
+</body>
+<script>
+    $('button').click(function () {
+        $('input').val(roundTo($('input').val(),2));
+    });
+</script>
+</html>
